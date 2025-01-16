@@ -1,0 +1,109 @@
+/* General container for all products */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Individual product card styling */
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Product image styling */
+.product-image {
+  width: 50%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  object-fit: cover;
+}
+
+/* Text styling for category, description, and price */
+.product-category {
+  font-weight: bold;
+  color: #333;
+  margin: 8px 0;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #555;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #e63946;
+  font-size: 16px;
+  margin: 12px 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .product-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%;
+  }
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar h1 {
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #ccc; /* Optional hover effect */
+}
+/* Footer styles */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
