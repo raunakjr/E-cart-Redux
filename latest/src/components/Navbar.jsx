@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useProduct } from "../contexts/product.context";
+import { useSelector } from "react-redux";
 
 export default function Navbar() {
   const { mode, setMode } = useProduct();
-  const { cartData } = useProduct();
+  const { cartData } = useSelector((state) => state.cart);
   const handleclick = () => {
     console.log("clicked");
     if (mode == "Light") setMode("Dark");
