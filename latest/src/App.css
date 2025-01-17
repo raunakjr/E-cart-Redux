@@ -54,7 +54,7 @@
   overflow: hidden; /* Hide overflow content */
   text-overflow: ellipsis; /* Add ellipsis for trimmed text */
   display: -webkit-box; /* Ensure multiline ellipsis */
-  -webkit-line-clamp: 2; /* Limit to 2 lines */
+
   -webkit-box-orient: vertical;
 }
 
@@ -134,3 +134,13 @@ button:hover {
   width: 100%;
   margin-top: auto;
 }
+/* body {
+  background-color: #ba1b1b;
+  color: #000;
+} */
+
+/* Dark Mode */
+/* body.dark {
+  background-color: #242424;
+  color: #fff;
+} */
